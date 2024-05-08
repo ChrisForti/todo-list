@@ -34,7 +34,11 @@
 body {
   margin: 0;
   display: flex;
-  background-image: url("./assets/original-cv.png");  
+  background-image: url("./assets/original-cv.png"); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom; 
+  background-position-x: left ;
   min-width: 320px;
   min-height: 100vh;
 }
