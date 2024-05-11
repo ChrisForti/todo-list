@@ -1,7 +1,7 @@
 import Iframe from "react-iframe";
 // import styles from "./ShadePark1.module.css";
 
-export default function ShadePark1() {
+export function ShadePark1() {
   return (
     <Iframe
       url="https://shaderpark.com/embed/-Np7TJ7lhufKxAsiV0ik"
