@@ -1,5 +1,3 @@
-import React from "react";
-
 type TodosProps = { todos: string[] };
 
 export function Todos({ todos }: TodosProps) {

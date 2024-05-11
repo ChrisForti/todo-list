@@ -1,14 +1,15 @@
-type urlProps = { style: URL[] };
+import Iframe from "react-iframe";
+// import styles from "./ShadePark1.module.css";
 
-export function Iframe() {
+export default function ShadePark1() {
   return (
     <Iframe
       url="https://shaderpark.com/embed/-Np7TJ7lhufKxAsiV0ik"
       width="640px"
       height="320px"
-      id=""
+      id="ShadePark1"
       className=""
-      display="block"
+      display="initial"
       position="relative"
     />
   );
