@@ -1,5 +1,5 @@
 import { Todo } from "./Todos";
-import MyImage from "../assets/original-cv-symbol.png";
+import MyImage from "../assets/transparent-cv.png";
 
 type TodoProps = {
   todo: Todo;
