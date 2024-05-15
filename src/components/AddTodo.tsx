@@ -1,9 +1,11 @@
 import { useState } from "react";
 import styles from "./AddTodo.module.css";
+import { Todo } from "./Todos";
+import { v4 as uuidv4 } from "uuid";
 
 type AddTodoProps = {
-  todos: string[];
-  setTodos: React.Dispatch<React.SetStateAction<string[]>>;
+  todos: Todo[];
+  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 };
 
 export function AddTodo({ todos, setTodos }: AddTodoProps) {
@@ -11,7 +13,9 @@ export function AddTodo({ todos, setTodos }: AddTodoProps) {
 
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    const newTodos = [...todos, newTaskName];
+    if (newTaskName === "") return;
+    const newTodo = { id: uuidv4(), name: newTaskName };
+    const newTodos = [...todos, newTodo];
     setTodos(newTodos);
     setNewTaskName("");
   }
