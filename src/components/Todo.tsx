@@ -1,4 +1,5 @@
 import { Todo } from "./Todos";
+import MyImage from "../assets/original-cv-symbol.png";
 
 type TodoProps = {
   todo: Todo;
@@ -15,7 +16,10 @@ export function TodoItem(props: TodoProps) {
   }
   return (
     <li>
-      {props.todo.name} <button onClick={handleDelete}>X</button>
+      {props.todo.name}{" "}
+      <button onClick={handleDelete}>
+        <img src={MyImage} width="30px" height="30px" />
+      </button>
     </li>
   );
 }
