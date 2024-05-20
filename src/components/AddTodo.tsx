@@ -14,7 +14,7 @@ export function AddTodo({ todos, setTodos }: AddTodoProps) {
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
     if (newTaskName === "") return;
-    const newTodo = { id: uuidv4(), name: newTaskName };
+    const newTodo = { id: uuidv4(), name: newTaskName, completed: false };
     const newTodos = [...todos, newTodo];
     setTodos(newTodos);
     setNewTaskName("");

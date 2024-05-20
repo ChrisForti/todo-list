@@ -36,7 +36,7 @@
 body {
   margin: 0;
   display: flex;
-  background-image: url("./assets/transparent-cv.png");  
+  /* background-image: url("./assets/transparent-cv.png");   */
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: bottom; 
