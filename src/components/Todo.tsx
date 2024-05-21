@@ -39,7 +39,7 @@ export function TodoItem(props: TodoProps) {
       />
       <span>{props.todo.name} </span>
       <button onClick={handleDelete} className={styles.button}>
-        {/* <img src={MyImage} width="30px" height="30px" /> */}x
+        <img src={MyImage} width="30px" height="30px" />
       </button>
     </li>
   );
