@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./AddTodo.module.css";
 import { Todo } from "./Todos";
 import { v4 as uuidv4 } from "uuid";
+import { saveTodos } from "../utils/storage";
 
 type AddTodoProps = {
   todos: Todo[];
@@ -16,6 +17,7 @@ export function AddTodo({ todos, setTodos }: AddTodoProps) {
     if (newTaskName === "") return;
     const newTodo = { id: uuidv4(), name: newTaskName, completed: false };
     const newTodos = [...todos, newTodo];
+    saveTodos(JSON.stringify(newTodos));
     setTodos(newTodos);
     setNewTaskName("");
   }

@@ -1,7 +1,8 @@
-import { Todo, Todos } from "./Todos";
+import { Todo } from "./Todos";
 import styles from "./Todo.module.css";
-import MyImage from "../assets/original-cv-symbol.png";
+// import MyImage from "../assets/original-cv-symbol.png";
 import { useState } from "react";
+import { saveTodos } from "../utils/storage";
 
 type TodoProps = {
   todo: Todo;
@@ -12,20 +13,21 @@ type TodoProps = {
 export function TodoItem(props: TodoProps) {
   const [checked, setChecked] = useState(props.todo.completed);
   function handleComplete() {
-    props.setTodos(
-      props.todos.map((todoItem) => {
-        if (todoItem.id === props.todo.id) {
-          todoItem.completed = !todoItem.completed;
-          setChecked(todoItem.completed);
-        }
-        return todoItem;
-      })
-    );
+    const newTodos = props.todos.map((todoItem) => {
+      if (todoItem.id === props.todo.id) {
+        todoItem.completed = !todoItem.completed;
+        setChecked(todoItem.completed);
+      }
+      return todoItem;
+    });
+    saveTodos(JSON.stringify(newTodos));
+    props.setTodos(newTodos);
   }
   function handleDelete() {
     const newTodos = props.todos.filter((todo) => {
       return todo.id !== props.todo.id;
     });
+    saveTodos(JSON.stringify(newTodos));
     props.setTodos(newTodos);
   }
   return (
@@ -39,7 +41,7 @@ export function TodoItem(props: TodoProps) {
       />
       <span>{props.todo.name} </span>
       <button onClick={handleDelete} className={styles.button}>
-        <img src={MyImage} width="30px" height="30px" />
+        {/* <img src={MyImage} width="30px" height="30px" /> */}x
       </button>
     </li>
   );
