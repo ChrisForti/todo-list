@@ -1,6 +1,7 @@
 :root {
-  /* background-image: url(./assets/neom-HYHYGLs-Rp8-unsplash.jpg); */
+  background-image: url(./assets/neom-HYHYGLs-Rp8-unsplash.jpg);
   background-size: cover;
+  
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

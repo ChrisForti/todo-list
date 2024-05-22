@@ -1,6 +1,6 @@
 import { Todo } from "./Todos";
 import styles from "./Todo.module.css";
-// import MyImage from "../assets/original-cv-symbol.png";
+import MyImage from "../assets/original-cv-symbol.png";
 import { useState } from "react";
 import { saveTodos } from "../utils/storage";
 
@@ -41,7 +41,7 @@ export function TodoItem(props: TodoProps) {
       />
       <span>{props.todo.name} </span>
       <button onClick={handleDelete} className={styles.button}>
-        {/* <img src={MyImage} width="30px" height="30px" /> */}x
+        <img src={MyImage} width="30px" height="30px" />
       </button>
     </li>
   );

@@ -3,8 +3,8 @@ import styles from "./Footer.module.css";
 
 export function Footer() {
   return (
-    <a className={styles.footer}>
-      <img src={MyImage} width="30px" height="30px" />
-    </a>
+    <div className={styles.footer}>
+      <img src={MyImage} width="1000px" height="500px" />
+    </div>
   );
 }
