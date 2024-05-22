@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import styles from "./App.module.css";
+import styles from "./App.module.css";
 import { AddTodo } from "./components/AddTodo";
 import { Todo, Todos } from "./components/Todos";
 import { Footer } from "./components/Footer";
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <h1>Todo list</h1>
+      <h1 className={styles.h1}>Todo list</h1>
       <AddTodo todos={todos} setTodos={setTodos} />
       <Todos todos={todos} setTodos={setTodos} />
       <Footer />
