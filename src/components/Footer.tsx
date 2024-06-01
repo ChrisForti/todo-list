@@ -1,4 +1,4 @@
-import MyImage from "../assets/transparent-cv.png";
+import MyImage from "../assets/grayscale-cv-symbol.png";
 import styles from "./Footer.module.css";
 
 export function Footer() {

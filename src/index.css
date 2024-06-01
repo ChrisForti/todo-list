@@ -1,5 +1,5 @@
 :root {
-  background-image: url(./assets/neom-HYHYGLs-Rp8-unsplash.jpg);
+  background-image: url(./assets/beach-1751455_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -8,16 +8,13 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  
 }
- 
+
 #root {
-  
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-
 }
 
 .link {
@@ -52,7 +49,6 @@
   :root {
     color: #213547;
     background-color: #ffffff;
-    
   }
   a:hover {
     color: #747bff;
@@ -60,7 +56,5 @@
   button {
     border: none;
     padding: 20px;
-    
   }
 }
-
