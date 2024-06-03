@@ -74,7 +74,7 @@ export function TodoItem(props: TodoProps) {
         />
       )}
       <button className={styles.edit} onClick={() => setIsEditing(!isEditing)}>
-        {isEditing ? "Done" : "Edit"}
+        {isEditing ? "--Done--" : "--Edit--"}
       </button>
       <button onClick={handleDelete} className={styles.button}>
         <img src={MyImage} width="30px" height="30px" />

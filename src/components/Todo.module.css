@@ -24,6 +24,9 @@
 
 .edit {
   background-color: transparent;
+  font-family: fantasy;
+  font-size: x-large;
+  box-sizing: 200px;
   border: black;
   color: black;
   padding: 0.2rem;
