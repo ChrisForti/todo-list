@@ -25,11 +25,10 @@
 .edit {
   background-color: transparent;
   border: black;
-  color: rgb(36, 170, 3);
+  color: black;
   padding: 0.2rem;
   margin: 0;
   text-align: right;
   left: auto;
-
   /* margin-right: 2rem; */
 }
