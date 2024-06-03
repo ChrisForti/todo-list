@@ -24,7 +24,8 @@
 
 .edit {
   background-color: transparent;
-  color: black;
+  border: black;
+  color: rgb(36, 170, 3);
   padding: 0.2rem;
   margin: 0;
   text-align: right;
