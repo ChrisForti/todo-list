@@ -26,11 +26,10 @@
   background-color: transparent;
   font-family: fantasy;
   font-size: x-large;
-  box-sizing: 200px;
   border: black;
   color: black;
   padding: 0.2rem;
-  margin: 0;
+  margin: 1rem;
   text-align: right;
   left: auto;
   /* margin-right: 2rem; */
