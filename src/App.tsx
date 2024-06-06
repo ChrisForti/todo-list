@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import styles from "./App.module.css";
+// import styles from "./App.module.css";
 import { AddTodo } from "./components/AddTodo";
 import { Todo, Todos } from "./components/Todos";
 import { Footer } from "./components/Footer";
 import { recallTodos } from "./utils/storage";
+import { Header } from "./components/Header";
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <>
-      <h1 className={styles.h1}>Todo list</h1>
+      <Header />
       <AddTodo todos={todos} setTodos={setTodos} />
       <Todos todos={todos} setTodos={setTodos} />
       <Footer />
