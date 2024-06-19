@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 // import styles from "./App.module.css";
 import { AddTodo } from "./components/AddTodo";
 import { Todo, Todos } from "./components/Todos";
-import { Footer } from "./components/Footer";
 import { recallTodos } from "./utils/storage";
 import { Header } from "./components/Header";
 
@@ -20,7 +19,6 @@ function App() {
       <Header />
       <AddTodo todos={todos} setTodos={setTodos} />
       <Todos todos={todos} setTodos={setTodos} />
-      <Footer />
     </>
   );
 }
