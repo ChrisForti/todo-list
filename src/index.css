@@ -12,7 +12,6 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /* flex-wrap: wrap-reverse; */
   /* overscroll-behavior-y: none; */
 }
 
@@ -22,18 +21,6 @@ body > div {
   -webkit-overflow-scrolling: touch;
 }
 
-/*html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-body > div {
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-*/
 #root {
   max-width: 1280px;
   margin: 0 auto;
