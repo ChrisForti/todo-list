@@ -7,7 +7,7 @@
 
 .checkbox {
   size: 40px;
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
 .button {
@@ -28,7 +28,6 @@
   color: rgba(36, 21, 243, 0.692);
   padding: 0.2rem;
   margin: 1rem;
-  text-align: right;
   left: auto;
   margin-right: auto;
 }
