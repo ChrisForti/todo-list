@@ -1,5 +1,4 @@
 .body {
   height: calc(100vh - (6rem + 5px));
   flex-wrap: wrap;
-  overflow: hidden;
 }
