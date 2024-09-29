@@ -1,4 +1,8 @@
 .form {
-  display: flex;
+  font: 100;
+  display: grid;
+  line-height: 3rem;
+  background-color: lightgrey;
   gap: 1rem;
+  text-align: left;
 }

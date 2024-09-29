@@ -1,4 +1,4 @@
-import MyImage from "../assets/grayscale-cv-symbol.png";
+import MyImage from "../assets/react.svg";
 import styles from "./Footer.module.css";
 
 export function Footer() {

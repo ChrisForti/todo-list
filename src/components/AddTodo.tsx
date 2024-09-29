@@ -24,11 +24,11 @@ export function AddTodo({ todos, setTodos }: AddTodoProps) {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label htmlFor="taskName">add task</label>
+      <label htmlFor="taskName">Add task here</label>
       <input
         type="text"
         name="taskName"
-        placeholder="Add task here"
+        placeholder="input box"
         value={newTaskName}
         onChange={(event) => {
           setNewTaskName(event.target.value);

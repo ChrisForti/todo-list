@@ -4,6 +4,7 @@ import { AddTodo } from "./components/AddTodo";
 import { Todo, Todos } from "./components/Todos";
 import { recallTodos } from "./utils/storage";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -17,8 +18,11 @@ function App() {
   return (
     <>
       <Header />
+
       <AddTodo todos={todos} setTodos={setTodos} />
+      <hr />
       <Todos todos={todos} setTodos={setTodos} />
+      <Footer />
     </>
   );
 }
