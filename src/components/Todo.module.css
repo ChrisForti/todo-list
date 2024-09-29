@@ -3,6 +3,7 @@
   display: flex;
   font-family: fantasy;
   font-size: 18px;
+  overflow: hidden;
 }
 
 .checkbox {
