@@ -1,5 +1,7 @@
 :root,
 body {
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1;
   color-scheme: light dark;
@@ -18,8 +20,8 @@ body > div {
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem;
-  text-align: left;
+  padding: 2rem;
+  text-align: center;
 }
 
 .link {
