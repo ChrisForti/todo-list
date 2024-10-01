@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import styles from "./App.module.css";
+import styles from "./App.module.css";
 import { AddTodo } from "./components/AddTodo";
 import { Todo, Todos } from "./components/Todos";
 import { recallTodos } from "./utils/storage";
@@ -18,9 +18,9 @@ function App() {
   return (
     <>
       <Header />
-
+      <hr className={styles.hr} />
       <AddTodo todos={todos} setTodos={setTodos} />
-      <hr />
+      <hr className={styles.hr} />
       <Todos todos={todos} setTodos={setTodos} />
       <Footer />
     </>

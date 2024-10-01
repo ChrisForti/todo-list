@@ -2,3 +2,11 @@
   height: calc(100vh - (6rem + 5px));
   flex-wrap: wrap;
 }
+
+.hr {
+  position: relative;
+  left: -25px;
+  width: calc(100% + 30px);
+  height: 1px;
+  border: 2px solid rgb(0, 0, 2);
+}
