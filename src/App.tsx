@@ -18,10 +18,12 @@ function App() {
   return (
     <>
       <Header />
-      <hr className={styles.hr} />
-      <AddTodo todos={todos} setTodos={setTodos} />
-      <hr className={styles.hr} />
-      <Todos todos={todos} setTodos={setTodos} />
+      <span>
+        <hr className={styles.hr} />
+        <AddTodo todos={todos} setTodos={setTodos} />
+        <hr className={styles.hr} />
+        <Todos todos={todos} setTodos={setTodos} />
+      </span>
       <Footer />
     </>
   );

@@ -1,4 +1,5 @@
 .footer {
-  position: absolute;
-  align-items: center;
+  margin-top: 70%; /* take available whitespace */
+  margin-bottom: 10px; /* remove bottom whitespace */
+  margin-left: 11rem;
 }
