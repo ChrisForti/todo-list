@@ -1,6 +1,7 @@
 .body {
+  position: relative;
   font-family: fantasy;
   color: rgb(9, 17, 3);
-  font-size: 5em;
+  font-size: 3em;
   text-align: center;
 }

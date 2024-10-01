@@ -1,5 +1,5 @@
 .ul {
-  list-style: none;
+  list-style-position: inside;
   display: flex;
   flex-direction: column;
   gap: 5px;
