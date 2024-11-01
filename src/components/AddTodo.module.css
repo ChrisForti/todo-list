@@ -1,6 +1,6 @@
 .form {
   display: grid;
-  line-height: 1rem;
-  background-color: lightgrey;
+  line-height: 2rem;
+  background-color: rgb(131, 169, 234);
   gap: 1rem;
 }
