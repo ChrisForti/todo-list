@@ -24,7 +24,9 @@ export function AddTodo({ todos, setTodos }: AddTodoProps) {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label htmlFor="taskName">Add task here</label>
+      <label className={styles.label} htmlFor="taskName">
+        Add task here
+      </label>
       <input
         type="text"
         name="taskName"

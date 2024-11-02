@@ -26,7 +26,7 @@ body > div {
 }
 
 .link:hover {
-  color: #33b91f;
+  color: #121412;
 }
 
 .button {
@@ -38,7 +38,7 @@ body > div {
   cursor: pointer;
 }
 .button:hover {
-  border-color: #646cff;
+  border-color: rgba(255, 5, 5, 0.97);
 }
 .button:focus,
 .button:focus-visible {

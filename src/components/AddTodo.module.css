@@ -4,3 +4,7 @@
   background-color: rgb(131, 169, 234);
   gap: 1rem;
 }
+
+.label {
+  color: black;
+}
